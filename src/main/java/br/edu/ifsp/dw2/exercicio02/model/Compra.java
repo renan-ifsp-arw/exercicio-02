@@ -1,4 +1,4 @@
-package model;
+package br.edu.ifsp.dw2.exercicio02.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,13 +13,13 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class Compra {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
     private Cartao cartao;
     @OneToOne
     private Cliente cliente;
     @ManyToOne
-    private Produto nome;
+    private Produto produto;
     private BigDecimal valor;
 }

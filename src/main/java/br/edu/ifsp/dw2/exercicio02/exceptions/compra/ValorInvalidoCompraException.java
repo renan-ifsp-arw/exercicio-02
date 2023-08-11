@@ -1,6 +1,6 @@
 package br.edu.ifsp.dw2.exercicio02.exceptions.compra;
 
-public class ValorInvalidoCompraException extends Throwable {
+public class ValorInvalidoCompraException extends CompraInvalidaException {
 
     private static final String MESSAGE = "Valor da compra acima de R$ 1000,00";
 

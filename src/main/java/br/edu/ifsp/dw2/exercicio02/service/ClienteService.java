@@ -1,2 +1,7 @@
-package br.edu.ifsp.dw2.exercicio02.service;public class ClienteService {
+package br.edu.ifsp.dw2.exercicio02.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ClienteService {
 }
